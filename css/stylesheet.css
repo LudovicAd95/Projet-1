@@ -65,8 +65,8 @@ main {
 }
 
 #articles article {
-    width: 250px;
-    height: 300px;
+    width: 300px;
+    height: 350px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -74,8 +74,8 @@ main {
 
 
 #articles img { 
-    width: 250px;
-    height: 300px;
+    width: 300px;
+    height: 350px;
     border-radius: 8px;
     object-fit: cover;
 }
