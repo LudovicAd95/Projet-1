@@ -43,3 +43,22 @@ footer {
     padding: 20px;
     box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.1);
 }
+
+img {
+    background-repeat: no-repeat;
+    width: 90%;
+}
+
+
+.img-container {
+    margin: 150px;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.Takumi-lyon {
+    width: 80%;
+    border-radius: 3em;
+}

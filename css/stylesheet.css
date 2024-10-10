@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+
  }
  
  body{
@@ -21,7 +22,7 @@
 h1{ 
 
     color: hsl(0, 0%, 100%);
-    text-shadow: 3px 3px 3px rgb(252, 87, 230); 
+    text-shadow: 2px 2px 2px rgb(252, 87, 230); 
     margin-bottom: 0%;
     font-size: 3em;
     text-align: center;
@@ -113,4 +114,10 @@ img {
 .nav-bar img { 
 margin: 0;
 padding:0;
+}
+
+a, li {
+    text-decoration: none;
+    color: #FFFFFF;
+    list-style-type: none;
 }
