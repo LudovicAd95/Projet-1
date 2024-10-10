@@ -18,9 +18,32 @@
     position: relative;
     display: flex;
     flex-direction: column;
-    alight-items: left;
+    align-items: left;
     justify-content:space-between;
     }
+
+.regime {
+    font-size: 20px ;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5%
+}
+
+.result {
+    width: 55%;
+    background-color: greenyellow;
+    border-radius: 5px;
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    
+}
+
 
 
 .logo img{
@@ -30,7 +53,6 @@
     margin: 5px;
     padding: 5px;
 }
-
 
 
 footer {
