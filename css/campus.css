@@ -48,6 +48,7 @@ h3 {
 }
 
 main {
+    
     display: flex;
     margin-left: 20%;
     flex-direction: row;
@@ -106,6 +107,33 @@ footer {
     color: white;
     padding: 20px;
     box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.1);
-    
 }
 
+
+
+.cards {
+    background: teal;
+    border-radius: 10px;
+    width: 800vw;
+    height: 20vh;
+    overflow: auto;
+    margin: 20px;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card-content {
+    padding: 16px;
+}
+
+.card-title {
+    font-size: 2em;
+    margin: 0;
+}
+
+.card-description {
+    color: black;
+}

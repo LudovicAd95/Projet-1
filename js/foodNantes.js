@@ -4,8 +4,7 @@ const foodNantes = [
 		nom: "Roadside",
 		adresse: "1 allée Flesselles, Nantes",
 		distance: "900 m",
-		description:
-			"Chez Roadside, dégustez des burgers faits maison, cuisinés à partir de produits de qualité, dans une ambiance typiquement américaine.",
+		description: "Chez Roadside, dégustez des burgers faits maison, cuisinés à partir de produits de qualité, dans une ambiance typiquement américaine.",
 		prix: "10-20€",
 		telephone: "02 28 29 84 40",
 		note: "4.3",
@@ -283,4 +282,3 @@ const foodNantes = [
 	},
 ];
 
-export default foodNantes;

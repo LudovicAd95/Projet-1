@@ -282,5 +282,3 @@ const foodParis = [
 		type: "bistro",
 	},
 ];
-
-export default foodParis;

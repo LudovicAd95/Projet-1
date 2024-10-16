@@ -1,0 +1,70 @@
+.burger {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 30px;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 10;
+    
+      
+  }
+  
+  .burger span {
+    background-color: whitesmoke;
+    height: 3px;
+    width: 100%;
+    transition: all 0.3s ease;
+    
+  }
+
+  .burger.active span:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+
+.burger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+  .menu {
+    position: absolute;
+    top: 0;
+    right: -250px;
+    width: 150px;
+    height: 100%;
+    background-color: #333;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+    transition: right 0.3s ease;
+    
+  }
+  
+  .menu ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .menu li {
+    margin: 20px 0;
+  }
+  
+  .menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+  }
+  
+  /* Menu ouvert */
+  .menu.open {
+    right: 0;
+  }
+
+ 

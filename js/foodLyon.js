@@ -282,5 +282,3 @@ const foodLyon = [
 		type: "bistro",
 	},
 ];
-
-export default foodLyon;

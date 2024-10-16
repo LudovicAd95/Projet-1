@@ -48,24 +48,27 @@
                         </br>
 
                      <div class="checkbox-Restaurant">
-                     <input type="checkbox" id="restaurant" name="restaurant" value="value">
+                     <input type="checkbox" id="restaurant" name="type" value="restaurant">
                      <label for="option1">Restaurant</label>
                      </div>
 
                      <div class="checkbox-FastFood">
-                     <input type="checkbox" id="FastFood" name="FastFood" value="value">
+                     <input type="checkbox" id="FastFood" name="type" value="FastFood">
                      <label for="option1">Fast-Food</label>
                      </div>
 
                      <div class="checkbox-Boulangerie">
-                     <input type="checkbox" id="Boulangerie" name="Boulangerie" value="value">
+                     <input type="checkbox" id="Boulangerie" name="type" value="boulangerie">
                      <label for="option1">Boulangerie</label>
                      </div>
                      
                      <div class="checkbox-Bistrot">
-                     <input type="checkbox" id="Bistrot" name="Bistrot" value="value">
+                     <input type="checkbox" id="Bistrot" name="type" value="Bistrot">
                      <label for="option1">Bistrot</label>
                      </div>
+
+                     <button id="filter-button">Filtrer</button>
+                     <div id="restaurant-container"></div>
                      
                      <img class="mog" src="https://ih1.redbubble.net/image.1361506241.1235/flat,750x,075,f-pad,750x1000,f8f8f8.jpg">
 
@@ -81,7 +84,7 @@
         
         <h2>Voici les restaurants répondant à tes critères</h2>
 
-        <div class="cards">
+        <div class="cards-container">
             <p>Restaurant ici</p>
         </div>
         
@@ -96,6 +99,8 @@
     </p>
 
 </footer>
+<script src="../js/foodNantes.js"></script>
+<script src="../js/CreateCard.js"></script>
 <script src="../js/index.js"></script>
 </body>
 </html>
