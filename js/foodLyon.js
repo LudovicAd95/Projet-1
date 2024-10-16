@@ -149,7 +149,7 @@ const foodLyon = [
 		prix: "10-20€",
 		telephone: "09 82 49 79 20",
 		note: "4.6",
-		regime: "",
+		regime: "végétarien",
 		type: "restaurant",
 	},
 

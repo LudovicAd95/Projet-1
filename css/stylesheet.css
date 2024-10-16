@@ -67,6 +67,11 @@ main {
 }
 }
 
+#articles :hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
 #articles article {
     width: 300px;
     height: 350px;
@@ -84,7 +89,7 @@ main {
 }
 
 footer {
-    position: fixed; 
+    position: absolute; 
     display: flex;
     justify-content: space-around;
     bottom: 0;

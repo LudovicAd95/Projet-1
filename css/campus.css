@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    
  }
 
  body{
@@ -48,13 +49,14 @@ h3 {
 }
 
 main {
-    
+    padding-bottom: 100px;
     display: flex;
     margin-left: 20%;
     flex-direction: row;
     align-items: flex-start;
     height: 100vh;
     width: 100vh;
+    
 }
 
 #content {
@@ -63,8 +65,9 @@ main {
     justify-content: center;
     gap: 1em;
     width: 80%;
-    margin-left: 10%;
+    margin-left: 20%;
     margin-top: 10%;
+    
 }
 
 .result {
@@ -78,7 +81,7 @@ main {
     margin: 1em 0;
 }
 
-.type{ }
+
 
 .mog{
     object-fit: cover;
@@ -93,6 +96,12 @@ main {
     height: auto; 
     margin: 5px;
     padding: 5px;
+}
+
+#br{
+    margin-top: 10em;
+    padding-top: 10em;
+    gap: 10em 0 0;
 }
 
 
@@ -120,6 +129,10 @@ footer {
     margin: 20px;
 }
 
+.card-container{
+    margin-bottom: 20px;
+}
+
 .card img {
     width: 100%;
     height: auto;
@@ -131,9 +144,47 @@ footer {
 
 .card-title {
     font-size: 2em;
-    margin: 0;
+    
 }
 
 .card-description {
     color: black;
 }
+
+.restaurant-card{
+    background-color: teal;
+    display: flex;
+    width: 1000px;
+    flex-direction: column;
+    border-radius: 2em;
+    padding:2%;
+    margin: 2%; 
+    box-shadow: 10px 5px 5px rgb(43, 42, 42);
+   
+}
+#restaurant-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    justify-items: center;
+  }
+
+  .restaurant-card h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: whitesmoke;
+  }
+
+  .restaurant-card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    transform: scale(1.05);
+    cursor: pointer;
+}
+
+
+  .restaurant-card p:last-of-type {
+    font-weight: bold;
+    color: #ffff;
+  }
+
