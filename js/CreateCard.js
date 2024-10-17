@@ -25,10 +25,6 @@ function CreateCardItem (resto) {
   name.textContent = restaurant.nom;
   card.appendChild(name);
 
-  // const img = document.createElement('p');
-  // img.textContent = <img src="https://i.etsystatic.com/19196787/r/il/375790/3364738221/il_570xN.3364738221_eu5w.jpg" alt = "Namazu">;
-  // img.appendChild(img);
-
   const address = document.createElement('p');
   address.textContent = `${restaurant.adresse}`;
   card.appendChild(address);
@@ -55,3 +51,4 @@ function CreateCardItem (resto) {
   console.log(card);
   return card;
 }
+
