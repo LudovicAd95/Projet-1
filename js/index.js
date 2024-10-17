@@ -39,62 +39,6 @@ switch (campus) {
     break;
 }
 ;
-
-// vegan.addEventListener("click", () => {
-//     let Vegans = foodLyon.filter(
-//         (vegan) => foodLyon.regime === 'végétarien');
-//     )
-//     console.log(Vegans);
-    
-// }
-    
-// ____
-// // vegan.addEventListener("change", () => {
-// //   let Vegans = [];
-
-// //   if (vegan.checked === true) {
-// //       Vegans = foodLyon.filter(
-// //           (restaurant) => restaurant.regime === 'végétarien'
-// //       );
-// //       console.log(Vegans);
-// //   } else {
-// //       console.log("Aucun filtre Vegan n'est appliqué.");
-// //   }
-// // });
-
-// // document.querySelector(".cards-container").innerHTML = lyon;
-// // genererPieces(Vegans);
-// // ;
-
-// ____
-// let Vegans = [];
-
-// vegan.addEventListener("change", () => {
-//     if (vegan.checked === true) {
-//         Vegans = foodLyon.filter(
-//             (restaurant) => restaurant.regime === 'végétarien'
-//         );
-//         console.log(Vegans);
-//     } else {
-//         Vegans = foodLyon; 
-//         console.log("Aucun filtre Vegan n'est appliqué.");
-//     }
- 
-//     genererPieces(Vegans);
-// });
-
-
-// document.querySelector(".cards-container").innerHTML = lyon;
-
-// function genererPieces(foodLyon) {
-//   const container = document.querySelector(".cards-container");
-
-//   container.innerHTML = "";
-//   foodLyon.forEach((restaurant) => {
-//     const cart = CreateCard(restaurant);
-//     container.innerHTML += Vegans;
-//   })
-// }
 // ____
 
 let Vegans = [];
@@ -105,6 +49,129 @@ vegan.addEventListener("change", () => {
    
         Vegans = foodLyon.filter(
             (restaurant) => restaurant.regime === 'végétarien'
+        );
+        console.log("Voici vos restaurant vegetarien");
+    } else {
+        Vegans = foodLyon;  
+        console.log("MEEP");
+    }
+
+    genererPieces(Vegans);  
+});
+
+
+document.querySelector(".cards-container").innerHTML = lyon;
+
+
+function genererPieces(foodLyon) {
+  const container = document.querySelector(".cards-container");
+  container.innerHTML = "";  
+  
+  foodLyon.forEach((restaurant) => {
+    const cardHTML = CreateCard(restaurant);  
+    container.append(cardHTML);  
+  });
+}
+
+
+
+fastFood.addEventListener("change", () => {
+    if (fastFood.checked === true) {
+   
+        Vegans = foodLyon.filter(
+            (restaurant) => restaurant.type === 'fast-food'
+        );
+        console.log("Voici vos restaurant vegetarien");
+    } else {
+        Vegans = foodLyon;  
+        console.log("MEEP");
+    }
+
+    genererPieces(Vegans);  
+});
+
+
+document.querySelector(".cards-container").innerHTML = lyon;
+
+
+function genererPieces(foodLyon) {
+  const container = document.querySelector(".cards-container");
+  container.innerHTML = "";  
+  
+  foodLyon.forEach((restaurant) => {
+    const cardHTML = CreateCard(restaurant);  
+    container.append(cardHTML);  
+  });
+}
+
+
+
+
+boulangerie.addEventListener("change", () => {
+    if (boulangerie.checked === true) {
+   
+      Vegans = foodLyon.filter(
+            (restaurant) => restaurant.type === 'boulangerie'
+        );
+        console.log("Voici vos restaurant vegetarien");
+    } else {
+        Vegans = foodLyon;  
+        console.log("MEEP");
+    }
+
+    genererPieces(Vegans);  
+});
+
+
+document.querySelector(".cards-container").innerHTML = lyon;
+
+
+function genererPieces(foodLyon) {
+  const container = document.querySelector(".cards-container");
+  container.innerHTML = "";  
+  
+  foodLyon.forEach((restaurant) => {
+    const cardHTML = CreateCard(restaurant);  
+    container.append(cardHTML);  
+  });
+}
+
+
+restaurant.addEventListener("change", () => {
+    if (restaurant.checked === true) {
+   
+        Vegans = foodLyon.filter(
+            (restaurant) => restaurant.type === 'restaurant'
+        );
+        console.log("Voici vos restaurant vegetarien");
+    } else {
+        Vegans = foodLyon;  
+        console.log("MEEP");
+    }
+
+    genererPieces(Vegans);  
+});
+
+
+document.querySelector(".cards-container").innerHTML = lyon;
+
+
+function genererPieces(foodLyon) {
+  const container = document.querySelector(".cards-container");
+  container.innerHTML = "";  
+  
+  foodLyon.forEach((restaurant) => {
+    const cardHTML = CreateCard(restaurant);  
+    container.append(cardHTML);  
+  });
+}
+
+
+bistro.addEventListener("change", () => {
+    if (bistro.checked === true) {
+   
+        Vegans = foodLyon.filter(
+            (restaurant) => restaurant.type === 'bistro'
         );
         console.log("Voici vos restaurant vegetarien");
     } else {
