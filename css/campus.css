@@ -1,3 +1,29 @@
+
+@font-face {
+    font-family: "JosefinSans";
+    src: url("../SRC/Font_Josefin/JosefinSans-Regular.ttf")
+}
+
+@font-face {
+    font-family: "RobotoBlack";
+    src: url("../SRC/Font_Roboto/Roboto-Black.ttf")
+}
+
+@font-face {
+    font-family: "RobotoBold";
+    src: url("../SRC/Font_Roboto/Roboto-Bold.ttf")
+}
+
+
+h1, h2, h3 {
+    font-family: "RobotoBlack";
+}
+
+p, label {
+    font-family: "JosefinSans";
+}
+
+
 * {
     margin: 0;
     padding: 0;
@@ -42,6 +68,7 @@ h3 {
     height: 100vh;
     justify-content:flex-start;
     padding: 10px;
+
     }
 
 .regime {
@@ -106,8 +133,8 @@ main {
 
 
 footer {
-    position: fixed; 
-    display: flex;
+    position: absolute; 
+    display: none;
     justify-content: space-around;
     bottom: 0;
     width: 100%;
@@ -118,16 +145,21 @@ footer {
     box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.1);
 }
 
+footer.visible {
+    display: flex;
+    opacity: 1;
+}
 
 
 .cards {
     background: teal;
     border-radius: 10px;
-    width: 800vw;
+    width: 800vh;
     height: 20vh;
     overflow: auto;
     margin: 20px;
 }
+
 
 .card-container{
     margin-bottom: 20px;
@@ -154,7 +186,7 @@ footer {
 .restaurant-card{
     background-color: teal;
     display: flex;
-    width: 1000px;
+    width: 110vh;
     flex-direction: column;
     border-radius: 2em;
     padding:2%;

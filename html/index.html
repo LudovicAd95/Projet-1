@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/stylesheet.css">
     <link rel="stylesheet" href="../css/menuburger.css">
+    <link rel="stylesheet" href="../css/responsivehome.css">
     <title>Wild Eat</title>
 
 </head>
@@ -43,7 +44,7 @@
    
     
     <h1><strong>Wild Eat</strong></h1>
-    <h3>C'est l'heure de la pause !</h3>
+    <h3 class="titre2" >C'est l'heure de la pause !</h3>
 
     
     
@@ -96,6 +97,24 @@
 
 <script src="../js/index.js"></script>
 <script src="../js/menuburger.js"></script>
+<script>
+    const footer = document.querySelector("footer"); // Sélectionnez le footer
+
+    // Écoutez l'événement de défilement
+    window.addEventListener("scroll", () => {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        const scrollHeight = document.documentElement.scrollHeight;
+        const clientHeight = document.documentElement.clientHeight;
+
+        // Vérifiez si l'utilisateur est en bas de la page
+        if (scrollTop + clientHeight >= scrollHeight - 10) { // Tolérance de 10px
+            footer.classList.add("visible"); // Ajoute la classe pour afficher le footer
+        } else {
+            footer.classList.remove("visible"); // Cache le footer
+        }
+    });
+</script>
+
 </body>
 
 

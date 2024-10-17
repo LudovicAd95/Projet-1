@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/campus.css">
+    <link rel="stylesheet" href="../css/menuburger.css">
+    <link rel="stylesheet" href="../css/responsivecampus.css">
     <title>Campus de Lyon</title>
 </head>
 <body>
@@ -42,7 +44,7 @@
 
                     <div class="type">
                         <label for="categorie">Type de restauration :</label>
-
+                        
                         <br>
                         </br>
 
@@ -98,5 +100,21 @@
 <script src="../js/foodLyon.js"></script>
 <script src="../js/CreateCard.js"></script>
 <script src="../js/index.js"></script>
+<script>
+    const footer = document.querySelector("footer");
+
+    window.addEventListener("scroll", () => {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        const scrollHeight = document.documentElement.scrollHeight;
+        const clientHeight = document.documentElement.clientHeight;
+
+        // Si l'utilisateur est en bas de la page
+        if (scrollTop + clientHeight >= scrollHeight - 10) {
+            footer.classList.add("visible");
+        } else {
+            footer.classList.remove("visible");
+        }
+    });
+</script>
 </body>
 </html>

@@ -514,3 +514,5 @@ bistro.addEventListener("change", () => {
   }
   genererPieces(Vegans);
 });
+
+
