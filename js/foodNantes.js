@@ -282,3 +282,237 @@ const foodNantes = [
 	},
 ];
 
+
+  // Filtre Nantes
+//   let Vegans = [];
+  
+
+
+//   vegan.addEventListener("change", () => {	
+// 	if (vegan.checked === true) {
+  
+// 		Vegans = foodNantes.filter(
+// 			(restaurant) => restaurant.regime === 'végétarien'
+// 		);
+// 	} else {
+// 		Vegans = foodNantes;  
+// 	}
+
+// 	genererPieces(Vegans);  
+// });
+
+
+// document.querySelector(".cards-container").innerHTML = nantes;
+
+
+// function genererPieces(foodNantes) {
+//   const container = document.querySelector(".cards-container");
+//   container.innerHTML = "";  
+  
+//   foodNantes.forEach((restaurant) => {
+// 	const cardHTML = CreateCard(restaurant);  
+// 	container.append(cardHTML);  
+//   });
+// }
+
+
+// fastFood.addEventListener("change", () => {
+// 	if (fastFood.checked === true) {
+  
+// 		Vegans = foodNantes.filter(
+// 			(restaurant) => restaurant.type === 'fast-food'
+// 		);
+// 		console.log("Voici vos restaurant vegetarien");
+// 	} else {
+// 		Vegans = foodNantes;  
+// 	}
+
+// 	genererPieces(Vegans);  
+// });
+
+
+// document.querySelector(".cards-container").innerHTML = nantes;
+
+
+// function genererPieces(foodNantes) {
+//   const container = document.querySelector(".cards-container");
+//   container.innerHTML = "";  
+  
+//   foodNantes.forEach((restaurant) => {
+// 	const cardHTML = CreateCard(restaurant);  
+// 	container.append(cardHTML);  
+//   });
+// }
+
+
+
+
+// boulangerie.addEventListener("change", () => {
+// 	if (boulangerie.checked === true) {
+  
+// 	  Vegans = foodNantes.filter(
+// 			(restaurant) => restaurant.type === 'boulangerie'
+// 		);
+// 		console.log("Voici vos restaurant vegetarien");
+// 	} else {
+// 		Vegans = foodNantes;  
+// 	}
+
+// 	genererPieces(Vegans);  
+// });
+
+
+// document.querySelector(".cards-container").innerHTML = nantes;
+
+
+// function genererPieces(foodNantes) {
+//   const container = document.querySelector(".cards-container");
+//   container.innerHTML = "";  
+  
+//   foodNantes.forEach((restaurant) => {
+// 	const cardHTML = CreateCard(restaurant);  
+// 	container.append(cardHTML);  
+//   });
+// }
+
+
+// restaurant.addEventListener("change", () => {
+// 	if (restaurant.checked === true) {
+  
+// 		Vegans = foodNantes.filter(
+// 			(restaurant) => restaurant.type === 'restaurant'
+// 		);
+// 		console.log("Voici vos restaurant vegetarien");
+// 	} else {
+// 		Vegans = foodNantes;  
+// 	}
+
+// 	genererPieces(Vegans);  
+// });
+
+
+// document.querySelector(".cards-container").innerHTML = nantes;
+
+
+// function genererPieces(foodNantes) {
+//   const container = document.querySelector(".cards-container");
+//   container.innerHTML = "";  
+  
+//   foodNantes.forEach((restaurant) => {
+// 	const cardHTML = CreateCard(restaurant);  
+// 	container.append(cardHTML);  
+//   });
+// }
+
+
+// bistro.addEventListener("change", () => {
+// 	if (bistro.checked === true) {
+  
+// 		Vegans = foodNantes.filter(
+// 			(restaurant) => restaurant.type === 'bistro'
+// 		);
+// 		console.log("Voici vos restaurant vegetarien");
+// 	} else {
+// 		Vegans = foodNantes;  
+// 	}
+
+// 	genererPieces(Vegans);  
+// });
+
+
+// document.querySelector(".cards-container").innerHTML = nantes;
+
+
+// function genererPieces(foodNantes) {
+//   const container = document.querySelector(".cards-container");
+//   container.innerHTML = "";  
+  
+//   foodNantes.forEach((restaurant) => {
+// 	const cardHTML = CreateCard(restaurant);  
+// 	container.append(cardHTML);  
+//   });
+// }
+
+//__
+
+let Vegans = [];
+// const foodNantes = [
+  // Liste de restaurants avec leurs propriétés comme "regime" et "type"
+;
+
+// Assurez-vous que les éléments sont correctement récupérés
+const vegan = document.getElementById("vegan");
+const fastFood = document.getElementById("fastFood");
+const boulangerie = document.getElementById("boulangerie");
+const restaurant = document.getElementById("restaurant");
+const bistro = document.getElementById("bistro");
+
+function genererPieces(restaurants) {
+  const container = document.querySelector(".cards-container");
+  container.innerHTML = "";  // Vider le container avant d'ajouter des nouvelles cartes
+
+  restaurants.forEach((restaurant) => {
+    const cardHTML = CreateCard(restaurant);  // Fonction de création de carte
+    container.append(cardHTML);
+  });
+}
+
+// Filtre par régime végétarien
+vegan.addEventListener("change", () => {
+  if (vegan.checked === true) {
+    Vegans = foodNantes.filter(
+      (restaurant) => restaurant.regime === 'végétarien'
+    );
+  } else {
+    Vegans = foodNantes;
+  }
+  genererPieces(Vegans);  
+});
+
+// Filtre par type fast-food
+fastFood.addEventListener("change", () => {
+  if (fastFood.checked === true) {
+    Vegans = foodNantes.filter(
+      (restaurant) => restaurant.type === 'fast-food'
+    );
+  } else {
+    Vegans = foodNantes;
+  }
+  genererPieces(Vegans);
+});
+
+// Filtre par type boulangerie
+boulangerie.addEventListener("change", () => {
+  if (boulangerie.checked === true) {
+    Vegans = foodNantes.filter(
+      (restaurant) => restaurant.type === 'boulangerie'
+    );
+  } else {
+    Vegans = foodNantes;
+  }
+  genererPieces(Vegans);
+});
+
+// Filtre par type restaurant
+restaurant.addEventListener("change", () => {
+  if (restaurant.checked === true) {
+    Vegans = foodNantes.filter(
+      (restaurant) => restaurant.type === 'restaurant'
+    );
+  } else {
+    Vegans = foodNantes;
+  }
+  genererPieces(Vegans);
+});
+
+// Filtre par type bistro
+bistro.addEventListener("change", () => {
+  if (bistro.checked === true) {
+    Vegans = foodNantes.filter(
+      (restaurant) => restaurant.type === 'bistro'
+    );
+  } else {
+    Vegans = foodNantes;
+  }
+  genererPieces(Vegans);
+});
